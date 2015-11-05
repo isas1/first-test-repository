@@ -1,6 +1,6 @@
 <!-- For more info on jQuery Mobile,  touch gestures and other useful events see : http://api.jquerymobile.com/category/events/ -->
 
-$(document).on("pagecreate","#pageone",function(){
+$(document).on("pagecreate","#pageone","#pagetwo",function(){
   
   	$('#tapholdtext').on("taphold",function(){
     	$(this).hide();
@@ -12,7 +12,11 @@ $(document).on("pagecreate","#pageone",function(){
 
 	$('#swipetext').on("swipeleft",function(){
     	$(this).css('color', 'green');
-  	});   
+  	});  
+
+  	$('#swipetext').on("swiperight",function(){
+    	$.mobile.changePage("#pagetwo","slide");
+  	});  
 
 
 });
