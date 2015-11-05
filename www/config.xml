@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.firsttest"
+        version   = "1.0.0">
+
+    <name>First Test App</name>
+
+    <description>
+        Testing application.
+    </description>
+
+    <author href="worcester.ac.uk" email="c.bowers@worc.ac.uk">
+        WBS Computing
+    </author>
+
+    <preference name="permissions"                value="none"/>   
+	
+	<access origin="*"/>
+</widget>
